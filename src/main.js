@@ -11,7 +11,9 @@
   }
 */
 
-function findParkByName(parks, name) {}
+function findParkByName(parks, name) {
+  return parks.find((park) => park.name === name) || null;
+};
 
 function allParksAboveCertainSize(parks, minSize) {}
 
